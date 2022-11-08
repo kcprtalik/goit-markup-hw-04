@@ -1,0 +1,542 @@
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size (opinionated).
+*/
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
+}
+
+/*
+Sections
+========
+*/
+
+/**
+1. Remove the margin in all browsers.
+2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+
+body {
+  margin: 0; /* 1 */
+  font-family: system-ui, -apple-system,
+    /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
+}
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+    monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --colorA: #ffffff;
+  --colorB: #2196f3;
+  --colorC: #757575;
+  --colorD: #000000;
+  --colorE: #212121;
+  --colorF: #f5f4fa;
+}
+body {
+  background-color: var(--colorA);
+  font-family: Roboto;
+}
+.link {
+  text-decoration: none;
+}
+.link:focus {
+  color: var(--colorB);
+}
+.link:hover {
+  color: var(--colorB);
+}
+.link-logo {
+  text-decoration: none;
+}
+.logo {
+  color: var(--colorD);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-web {
+  color: var(--colorB);
+}
+.list {
+  list-style: none;
+}
+.wayfinding-list-item {
+  color: var(--colorE);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.contacts {
+  color: var(--colorC);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.background-a {
+  background-color: #2f303a;
+}
+.slogan {
+  color: var(--colorA);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  padding-block: 200px 30px;
+  margin-inline: 280px;
+}
+.slogan-btn {
+  background-color: var(--colorB);
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  color: var(--colorA);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  font-family: inherit;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-block: 0 200px;
+}
+.general-list-title {
+  color: var(--colorE);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  padding-bottom: 10px;
+}
+.general-list-description {
+  color: var(--colorC);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.title {
+  color: var(--colorE);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.background-b {
+  background-color: var(--colorF);
+}
+.team-photo {
+  background-color: var(--colorA);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-photo-title {
+  color: var(--colorEcolorE);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-photo-description {
+  color: var(--colorC);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.background-c {
+  background-color: #2f303a;
+}
+.portfolio-contacts-title {
+  color: var(--colorA);
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+}
+.portfolio-contacts {
+  color: var(--colorA);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.portfolio-background {
+  background-color: var(--colorA);
+}
+.portfolio-btn {
+  background-color: var(--colorF);
+  width: 93px;
+  height: 38px;
+  border-radius: 4px;
+  border-style: none;
+  cursor: pointer;
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: inherit;
+}
+.portfolio-btn:hover {
+  background-color: var(--colorB);
+  width: 121px;
+  height: 38px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border-style: none;
+}
+.portfolio-btn:focus {
+  background-color: var(--colorB);
+  width: 121px;
+  height: 38px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.flex-top {
+  display: flex;
+  border-bottom: 1px solid #ececec;
+}
+.list-top {
+  display: flex;
+  gap: 46px;
+  margin-block: 32px;
+  margin-right: 371px;
+}
+.contacts-top {
+  display: flex;
+  gap: 50px;
+  margin-block: 32px;
+}
+.btn-align {
+  display: flex;
+  justify-content: center;
+}
+.list-middle {
+  display: flex;
+  gap: 30px;
+  margin-block: 94px;
+}
+.title-middle-one {
+  margin-bottom: 50px;
+}
+.list-image-middle-one {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 94px;
+}
+.title-middle-two {
+  padding-block: 50px 94px;
+}
+.list-image-middle-two {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 94px;
+}
+.team-photo-title-align {
+  padding-block: 30px 10px;
+}
+.team-photo-description-align {
+  padding-bottom: 30px;
+}
+.logo-top {
+  margin-right: 93px;
+  margin-block: 24px 25px;
+}
+.container-bottom {
+  padding-block: 60px;
+}
+.address-align {
+  gap: 9px;
+}
+.list-portfolio-middle {
+  display: flex;
+  gap: 8px;
+  margin-top: 94px;
+  padding-inline: 303px;
+}
+.list-portfolio-middle-two {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-block: 50px 94px;
+}
+.list-portfolio-middle-two h5:nth-child(n) {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--colorE);
+  line-height: 2;
+  padding-left: 24px;
+  padding-block: 20px 4px;
+}
+.list-portfolio-middle-two p:nth-child(n) {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--colorC);
+  padding-left: 24px;
+  padding-bottom: 20px;
+}
+.list-portfolio-middle-two li:nth-child(n) {
+  border: 1px solid #eeeeee;
+}
