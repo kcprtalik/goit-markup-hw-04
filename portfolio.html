@@ -4,184 +4,273 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet" />
-    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <section>
-        <div class="container flex-top section">
-          <a class="link-logo logo logo-top" href="#"
-            ><span class="logo-web">Web</span>Studio</a
+    <header class="header-font border-bot">
+      <div class="header-just">
+        <nav class="header-box">
+          <a href="index.html" class="logo"
+            ><span class="logo-color">Web</span>Studio</a
           >
-          <nav>
-            <ul class="list list-top">
-              <li>
-                <a class="link wayfinding-list-item" href="./index.html"
-                  >Agencja</a
-                >
-              </li>
-              <li>
-                <a class="link wayfinding-list-item" href="./portfolio.html"
-                  >Portfolio</a
-                >
-              </li>
-              <li><a class="link wayfinding-list-item" href="#">Kontakt</a></li>
-            </ul>
-          </nav>
-          <ul class="list contacts-top">
+          <ul class="first-list">
+            <li><a class="link" href="index.html">Agencja</a></li>
             <li>
-              <a class="link contacts" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+              <a class="link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li><a class="link" href="#">Kontakt</a></li>
+          </ul>
+
+          <ul class="second-list">
+            <li>
+              <a class="link-header" href="#">
+                <svg class="icon icon-svg" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
             <li>
-              <a class="link contacts" href="tel:+48111111111"
+              <a class="link-header" href="#">
+                <svg class="icon icon-svg" width="16" height="12">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg
                 >+48 111 111 111</a
               >
             </li>
           </ul>
-        </div>
-      </section>
-    </header>
-    <main class="portfolio-background">
-      <section class="container section">
-        <nav>
-          <ul class="list list-portfolio-middle">
-            <li>
-              <button class="portfolio-btn" type="button">Wszystkie</button>
-            </li>
-            <li><button class="portfolio-btn" type="button">Strony</button></li>
-            <li>
-              <button class="portfolio-btn" type="button">Aplikacje</button>
-            </li>
-            <li><button class="portfolio-btn" type="button">Dizajn</button></li>
-            <li>
-              <button class="portfolio-btn" type="button">Marketing</button>
-            </li>
-          </ul>
         </nav>
-      </section>
-      <section class="container section">
-        <ul class="list list-portfolio-middle-two">
+      </div>
+    </header>
+
+    <main>
+      <section class="container section-portfolio-padding">
+        <ul class="portfolio-buttons">
           <li>
-            <img
-              src="./images/photoportfolioa.jpg"
-              alt="laptop screen"
-              width="370"
-              height="294" />
-            <h5>Technocrack</h5>
-            <p>Strona internetowa</p>
+            <button type="button" class="button">Wszystkie</button>
           </li>
           <li>
-            <img
-              src="./images/photoportfoliob.jpg"
-              alt="men playing basketball"
-              width="370"
-              height="294" />
-            <h5>Grafika New Orlean vs Golden Star</h5>
-            <p>Dizajn</p>
+            <button type="button" class="button">Strony</button>
           </li>
           <li>
-            <img
-              src="./images/photoportfolioc.jpg"
-              alt="restaurant logo"
-              width="370"
-              height="294" />
-            <h5>Restauracja Seafood</h5>
-            <p>Aplikacja</p>
+            <button type="button" class="button">Aplikacje</button>
           </li>
           <li>
-            <img
-              src="./images/photoportfoliod.jpg"
-              alt="headphones"
-              width="370"
-              height="294" />
-            <h5>Projekt Prime</h5>
-            <p>Marketing</p>
+            <button type="button" class="button">Dizajn</button>
           </li>
           <li>
-            <img
-              src="./images/photoportfolioe.jpg"
-              alt="two boxes"
-              width="370"
-              height="294" />
-            <h5>Projekt Boxes</h5>
-            <p>Aplikacja</p>
+            <button type="button" class="button">Marketing</button>
           </li>
-          <li>
-            <img
-              src="./images/photoportfoliof.jpg"
-              alt="mac screen"
-              width="370"
-              height="294" />
-            <h5>Inspiration has no Borders</h5>
-            <p>Strona internetowa</p>
+        </ul>
+
+        <ul class="section-photo">
+          <li class="portfolio-photo-flex">
+            <figure class="figure-photo-portfolio">
+              <img
+                class="image-width"
+                src="./images/photoportfolioa.jpg"
+                width="370"
+                height="294"
+                alt="przykladowa strona" />
+              <figcaption class="portfolio-figcaption-padding">
+                <strong class="figcaption-strong-portfolio">Technocrack</strong>
+                <p class="figcaption-p-portfolio">Strona internetowa</p>
+              </figcaption>
+            </figure>
           </li>
-          <li>
-            <img
-              src="./images/photoportfoliog.jpg"
-              alt="open book"
-              width="370"
-              height="294" />
-            <h5>Magazyn Limited Edition</h5>
-            <p>Dizajn</p>
+          <li class="portfolio-photo-flex">
+            <figure class="figure-photo-portfolio">
+              <img
+                class="image-width"
+                src="./images/photoportfoliob.jpg"
+                width="370"
+                height="294"
+                alt="Koszykarze" />
+              <figcaption class="portfolio-figcaption-padding">
+                <strong class="figcaption-strong-portfolio"
+                  >Grafika New Orlean vs Golden Star</strong
+                >
+                <p class="figcaption-p-portfolio">Dizajn</p>
+              </figcaption>
+            </figure>
           </li>
-          <li>
-            <img
-              src="./images/photoportfolioh.jpg"
-              alt="label tag"
-              width="370"
-              height="294" />
-            <h5>Projekt LAB</h5>
-            <p>Marketing</p>
+          <li class="portfolio-photo-flex">
+            <figure class="figure-photo-portfolio">
+              <img
+                class="image-width"
+                src="./images/photoportfolioc.jpg"
+                width="370"
+                height="294"
+                alt="Logo restauracji" />
+              <figcaption class="portfolio-figcaption-padding">
+                <strong class="figcaption-strong-portfolio"
+                  >Restauracja Seafood</strong
+                >
+                <p class="figcaption-p-portfolio">Aplikacja</p>
+              </figcaption>
+            </figure>
           </li>
-          <li>
-            <img
-              src="./images/photoportfolioi.jpg"
-              alt="person typing"
-              width="370"
-              height="294" />
-            <h5>Growing Business</h5>
-            <p>Aplikacja</p>
+
+          <li class="portfolio-photo-flex">
+            <figure class="figure-photo-portfolio">
+              <img
+                class="image-width"
+                src="./images/photoportfoliod.jpg"
+                width="370"
+                height="294"
+                alt="Słuchawki" />
+              <figcaption class="portfolio-figcaption-padding">
+                <strong class="figcaption-strong-portfolio"
+                  >Projekt Prime</strong
+                >
+                <p class="figcaption-p-portfolio">Marketing</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="portfolio-photo-flex">
+            <figure class="figure-photo-portfolio">
+              <img
+                class="image-width"
+                src="./images/photoportfolioe.jpg"
+                width="370"
+                height="294"
+                alt="Pudełka" />
+              <figcaption class="portfolio-figcaption-padding">
+                <strong class="figcaption-strong-portfolio"
+                  >Projekt Boxes</strong
+                >
+                <p class="figcaption-p-portfolio">Aplikacja</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="portfolio-photo-flex">
+            <figure class="figure-photo-portfolio">
+              <img
+                class="image-width"
+                src="./images/photoportfoliof.jpg"
+                width="370"
+                height="294"
+                alt="Monitor" />
+              <figcaption class="portfolio-figcaption-padding">
+                <strong class="figcaption-strong-portfolio"
+                  >Inspiration has no Borders</strong
+                >
+                <p class="figcaption-p-portfolio">Strona internetowa</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="portfolio-photo-flex">
+            <figure class="figure-photo-portfolio">
+              <img
+                class="image-width"
+                src="./images/photoportfoliog.jpg"
+                width="370"
+                height="294"
+                alt="Książka" />
+              <figcaption class="portfolio-figcaption-padding">
+                <strong class="figcaption-strong-portfolio"
+                  >Magazyn Limited Edition</strong
+                >
+                <p class="figcaption-p-portfolio">Dizajn</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="portfolio-photo-flex">
+            <figure class="figure-photo-portfolio">
+              <img
+                class="image-width"
+                src="./images/photoportfolioh.jpg"
+                width="370"
+                height="294"
+                alt="Etykieta" />
+              <figcaption class="portfolio-figcaption-padding">
+                <strong class="figcaption-strong-portfolio">Projekt LAB</strong>
+                <p class="figcaption-p-portfolio">Marketing</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="portfolio-photo-flex">
+            <figure class="figure-photo-portfolio">
+              <img
+                class="image-width"
+                src="./images/photoportfolioi.jpg"
+                width="370"
+                height="294"
+                alt="Laptop" />
+              <figcaption class="portfolio-figcaption-padding">
+                <strong class="figcaption-strong-portfolio"
+                  >Growing Business</strong
+                >
+                <p class="figcaption-p-portfolio">Aplikacja</p>
+              </figcaption>
+            </figure>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <section>
-        <div class="background-c container container-bottom section">
-          <a class="link-logo logo" href="#"
-            ><span class="logo-web">Web</span>Studio</a
-          >
-          <address>
-            <div class="address-align">
-              <span class="portfolio-contacts-title"
-                >m.Warszawa, Aleje Jerozolimskie 21</span
-              >
-              <ul class="list">
-                <li>
-                  <a
-                    class="link portfolio-contacts"
-                    href="mailto:info@example.com"
-                    >info@example.com</a
-                  >
-                </li>
-                <li>
-                  <a class="link portfolio-contacts" href="tel:+48111111111"
-                    >+48 111 111 111</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </address>
+    <footer class="footer">
+      <div class="container flix">
+        <div class="kontakt">
+          <div class="footer-logo-padding">
+            <a href="index.html" class="logo"
+              ><span class="logo-color">Web</span
+              ><span class="logo-color-footer">Studio</span></a
+            >
+          </div>
+          <ul class="footer-font footer-contact">
+            <li class="footer-li-margin-bot">
+              <address class="addres-color">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </address>
+            </li>
+
+            <li class="footer-li-margin-bot">
+              <a class="link-footer" href="#">info@devstudio.com</a>
+            </li>
+            <li class="link-footer-padding">
+              <a class="link-footer" href="#">+48 111 111 111</a>
+            </li>
+          </ul>
         </div>
-      </section>
+        <div class="joinus-footer">
+          <h4 class="h4-class-footer">DOŁĄCZ DO NAS</h4>
+          <div class="social-links">
+            <div class="social-links-style social-links-footer">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </div>
+            <div class="social-links-style social-links-footer">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </div>
+            <div class="social-links-style social-links-footer">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </div>
+            <div class="social-links-style social-links-footer">
+              <svg width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

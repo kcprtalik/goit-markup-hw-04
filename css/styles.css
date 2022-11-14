@@ -1,542 +1,488 @@
-/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-
-/*
-Document
-========
-*/
-
-/**
-Use a better box model (opinionated).
-*/
-
-*,
-::before,
-::after {
-  box-sizing: content-box;
-  padding: 0;
-  margin: 0;
-}
-
-/**
-1. Correct the line height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
-3. Use a more readable tab size (opinionated).
-*/
-
-html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -moz-tab-size: 4; /* 3 */
-  tab-size: 4; /* 3 */
-}
-
-/*
-Sections
-========
-*/
-
-/**
-1. Remove the margin in all browsers.
-2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-*/
-
-body {
-  margin: 0; /* 1 */
-  font-family: system-ui, -apple-system,
-    /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
-}
-
-/*
-Grouping content
-================
-*/
-
-/**
-1. Add the correct height in Firefox.
-2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-*/
-
-hr {
-  height: 0; /* 1 */
-  color: inherit; /* 2 */
-}
-
-/*
-Text-level semantics
-====================
-*/
-
-/**
-Add the correct text decoration in Chrome, Edge, and Safari.
-*/
-
-abbr[title] {
-  text-decoration: underline dotted;
-}
-
-/**
-Add the correct font weight in Edge and Safari.
-*/
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
-1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-2. Correct the odd 'em' font sizing in all browsers.
-*/
-
-code,
-kbd,
-samp,
-pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
-    monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
-Add the correct font size in all browsers.
-*/
-
-small {
-  font-size: 80%;
-}
-
-/**
-Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
-*/
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/*
-Tabular data
-============
-*/
-
-/**
-1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
-2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-*/
-
-table {
-  text-indent: 0; /* 1 */
-  border-color: inherit; /* 2 */
-}
-
-/*
-Forms
-=====
-*/
-
-/**
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-*/
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-/**
-Remove the inheritance of text transform in Edge and Firefox.
-*/
-
-button,
-select {
-  text-transform: none;
-}
-
-/**
-Correct the inability to style clickable types in iOS and Safari.
-*/
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-/**
-Remove the inner border and padding in Firefox.
-*/
-
-::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
-Restore the focus styles unset by the previous rule.
-*/
-
-:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
-Remove the additional ':invalid' styles in Firefox.
-See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
-*/
-
-:-moz-ui-invalid {
-  box-shadow: none;
-}
-
-/**
-Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
-*/
-
-legend {
-  padding: 0;
-}
-
-/**
-Add the correct vertical alignment in Chrome and Firefox.
-*/
-
-progress {
-  vertical-align: baseline;
-}
-
-/**
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
-
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
-
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-/**
-Remove the inner padding in Chrome and Safari on macOS.
-*/
-
-::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to 'inherit' in Safari.
-*/
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
-
-/*
-Interactive
-===========
-*/
-
-/*
-Add the correct display in Chrome and Safari.
-*/
-
-summary {
-  display: list-item;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 15px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
 :root {
-  --colorA: #ffffff;
-  --colorB: #2196f3;
-  --colorC: #757575;
-  --colorD: #000000;
-  --colorE: #212121;
+  --colorA: #212121;
+  --colorB: #000000;
+  --colorC: #2196f3;
+  --colorD: #2f303a;
+  --colorE: #ffffff;
   --colorF: #f5f4fa;
+  --colorG: #757575;
+  --colorH: rgba(255, 255, 255, 0.6);
+  --colorI: #ececec;
+  --colorJ: #afb1b8;
+  --colorK: #eeeeee;
 }
 body {
-  background-color: var(--colorA);
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
+  color: var(--colorA);
+  margin: 0;
 }
-.link {
-  text-decoration: none;
-}
-.link:focus {
-  color: var(--colorB);
-}
-.link:hover {
-  color: var(--colorB);
-}
-.link-logo {
-  text-decoration: none;
+ul,
+li {
+  list-style-type: none;
 }
 .logo {
-  color: var(--colorD);
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-}
-.logo-web {
   color: var(--colorB);
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 93px;
 }
-.list {
+.loor {
   list-style: none;
+  display: flex;
+  margin: inherit;
+  align-items: center;
 }
-.wayfinding-list-item {
-  color: var(--colorE);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-}
-.contacts {
+/*.ul-nopoint {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}*/
+
+.link:hover {
   color: var(--colorC);
+  cursor: pointer;
+  transition: all 0.28s;
+}
+.link {
+  color: var(--colorA);
+  text-decoration: none;
+}
+.logo-color {
+  color: var(--colorC);
+}
+.link-header {
+  color: var(--colorG);
+  text-decoration: none;
+}
+.link-header:hover {
+  color: var(--colorC);
+  cursor: pointer;
+  transition: all 0.28s;
+}
+.link-header:hover svg {
+  stroke: var(--colorC);
+  fill: var(--colorC);
+}
+.header-font {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  height: 80px;
 }
-.background-a {
-  background-color: #2f303a;
+.footer-font {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
 }
-.slogan {
-  color: var(--colorA);
+.h1-class {
+  color: var(--colorE);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
-  padding-block: 200px 30px;
-  margin-inline: 280px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  letter-spacing: 0.06em;
 }
-.slogan-btn {
-  background-color: var(--colorB);
-  width: 200px;
-  height: 50px;
-  cursor: pointer;
+.button-agencja {
   color: var(--colorA);
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
-  font-family: inherit;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  margin-block: 0 200px;
+  line-height: 1.85;
+  background-color: var(--colorF);
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4%;
 }
-.general-list-title {
+.button-agencja:hover {
+  background-color: var(--colorC);
   color: var(--colorE);
+  cursor: pointer;
+  transition: all 0.28s;
+}
+.button {
+  color: var(--colorA);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  background-color: var(--colorF);
+  cursor: pointer;
+  margin-right: 8px;
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4%;
+}
+.button:hover {
+  background-color: var(--colorC);
+  color: var(--colorE);
+  cursor: pointer;
+  transition: all 0.28s;
+  color: var(--colorE);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: all 0.2s;
+}
+.h2-class {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 50px;
+}
+.h3-class {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  padding-bottom: 10px;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
-.general-list-description {
-  color: var(--colorC);
+.text-lorem {
+  color: var(--colorG);
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.71;
+  width: 270px;
+  height: 75px;
+  text-align: justify;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 30px;
+  letter-spacing: 0.03em;
+  margin-right: 0px;
 }
-.title {
-  color: var(--colorE);
+.figcaption-strong-studio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--colorA);
+}
+.figcaption-p-studio {
+  color: var(--colorG);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.figcaption-strong-portfolio {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+  font-size: 18px;
+  line-height: 2;
 }
-.background-b {
+.figcaption-p-portfolio {
+  color: var(--colorG);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
+.footer {
+  background-color: var(--colorD);
+  height: 252px;
+}
+.logo-color-footer {
+  color: var(--colorE);
+}
+.addres-color {
+  color: var(--colorE);
+  font-style: normal;
+}
+.link-footer {
+  color: var(--colorH);
+  text-decoration: none;
+}
+.link-footer:hover {
+  color: var(--colorC);
+  cursor: pointer;
+  transition: all 0.28s;
+}
+
+.background-team {
   background-color: var(--colorF);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.team-photo {
-  background-color: var(--colorA);
+.background-main-upper {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(../images/background.jpg);
+  max-width: 1600px;
+  margin: auto;
+  padding: 0 15px;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+.main-upper {
+  text-align: center;
+  max-width: 696px;
+}
+
+.header-box {
+  margin: 0 auto;
+  box-sizing: border-box;
+  justify-content: space-between;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  height: 26px;
+  align-items: center;
+  padding: 0 15px;
+}
+.first-list {
+  text-align: center;
+  display: flex;
+  padding-left: 0px;
+
+  flex-grow: 1;
+  gap: 46px;
+
+  /* margin: 32x 371px 32px 0;*/
+}
+.second-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+
+  gap: 50px;
+}
+.header-just {
+  padding: 27px 0;
+}
+.border-bot {
+  border-bottom: 1px solid;
+  color: var(--colorI);
+}
+.lorem-cointainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 94px;
+}
+.lorem-flex {
+  display: flex;
+  margin: inherit;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-left: 0px;
+}
+.lorem-height {
+  height: 600px;
+}
+/*section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}*/
+.presentation-flex {
+  display: flex;
+  margin: inherit;
+  align-items: center;
+  list-style: none;
+  padding-left: 0px;
+}
+.presentation-margin {
+  margin-right: 30px;
+}
+.presentation-padding {
+  padding-block: 94px;
+}
+.figure {
+  margin: 0;
+  background-color: var(--colorE);
+  margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-photo-title {
-  color: var(--colorEcolorE);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+.figbot {
+  background-color: var(--colorE);
   text-align: center;
+  padding-top: 30px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
-.team-photo-description {
-  color: var(--colorC);
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
+.footer-logo-padding {
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
-.background-c {
-  background-color: #2f303a;
+.footer-contact {
+  margin: 0;
+  padding-left: 0;
 }
-.portfolio-contacts-title {
-  color: var(--colorA);
-  font-size: 14px;
-  line-height: 1.7;
-  font-style: normal;
-}
-.portfolio-contacts {
-  color: var(--colorA);
-  font-size: 14px;
-  line-height: 1.7;
-}
-.portfolio-background {
-  background-color: var(--colorA);
-}
-.portfolio-btn {
-  background-color: var(--colorF);
-  width: 93px;
-  height: 38px;
-  border-radius: 4px;
-  border-style: none;
-  cursor: pointer;
-  color: #212121;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  font-family: inherit;
-}
-.portfolio-btn:hover {
-  background-color: var(--colorB);
-  width: 121px;
-  height: 38px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  border-style: none;
-}
-.portfolio-btn:focus {
-  background-color: var(--colorB);
-  width: 121px;
-  height: 38px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-.flex-top {
+
+.portfolio-buttons {
   display: flex;
-  border-bottom: 1px solid #ececec;
+  margin: inherit;
+  align-items: center;
+  padding-left: 295px;
+  list-style: none;
+  padding-bottom: 50px;
 }
-.list-top {
-  display: flex;
-  gap: 46px;
-  margin-block: 32px;
-  margin-right: 371px;
-}
-.contacts-top {
-  display: flex;
-  gap: 50px;
-  margin-block: 32px;
-}
-.btn-align {
-  display: flex;
-  justify-content: center;
-}
-.list-middle {
-  display: flex;
-  gap: 30px;
-  margin-block: 94px;
-}
-.title-middle-one {
-  margin-bottom: 50px;
-}
-.list-image-middle-one {
-  display: flex;
-  gap: 30px;
-  margin-bottom: 94px;
-}
-.title-middle-two {
-  padding-block: 50px 94px;
-}
-.list-image-middle-two {
-  display: flex;
-  gap: 30px;
+.section-portfolio-padding {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
-.team-photo-title-align {
-  padding-block: 30px 10px;
-}
-.team-photo-description-align {
-  padding-bottom: 30px;
-}
-.logo-top {
-  margin-right: 93px;
-  margin-block: 24px 25px;
-}
-.container-bottom {
-  padding-block: 60px;
-}
-.address-align {
-  gap: 9px;
-}
-.list-portfolio-middle {
-  display: flex;
-  gap: 8px;
-  margin-top: 94px;
-  padding-inline: 303px;
-}
-.list-portfolio-middle-two {
+.section-photo {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-block: 50px 94px;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
-.list-portfolio-middle-two h5:nth-child(n) {
-  font-weight: 700;
-  font-size: 18px;
+.portfolio-photo-flex {
+  flex-basis: calc((100% - 60px) / 3);
+}
+.figure-photo-portfolio {
+  background: var(--colorE);
+  border: 1px solid var(--colorK);
+  margin: 0 auto;
+}
+.figure-photo-portfolio:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: all 0.2s;
+}
+.image-width {
+  width: 100%;
+  vertical-align: top;
+}
+.portfolio-figcaption-padding {
+  padding: 20px 24px;
+}
+.footer-li-margin-bot {
+  margin-bottom: 9px;
+}
+.icon {
+  text-decoration: none;
+  border-style: none;
+  background-color: var(--colorE);
+  vertical-align: text-bottom;
+
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  fill: var(--colorG);
+  stroke: var(--colorG);
+  color: #757575;
+}
+.icon-svg:hover {
+  fill: var(--colorC);
+  transition: all 0.28s;
+  cursor: pointer;
+}
+.lorem-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+.social-links-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--colorJ);
+}
+/*.test3 {
+  fill: var(--main-blue);
+}*/
+
+.social-links-style:hover {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--colorF);
+  background: var(--colorC);
+  cursor: pointer;
+  transition: all 0.28s;
+}
+.section-padding {
+  padding-block: 94px;
+}
+.customers {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-left: 0;
+  margin-block: 0;
+}
+.customers-logo {
+  width: 170px;
+  height: 92px;
+
+  border-radius: 4px;
+  fill: var(--colorJ);
+  border-radius: 4px;
+  outline: 1px solid var(--colorJ);
+}
+.customers-logo:hover {
+  fill: var(--colorC);
+  transition: all 0.28s;
+  outline-color: var(--colorC);
+  cursor: pointer;
+}
+
+.h4-class-footer {
+  letter-spacing: 0.03em;
   color: var(--colorE);
-  line-height: 2;
-  padding-left: 24px;
-  padding-block: 20px 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  padding-top: 72px;
+  line-height: 16px;
+  margin-top: 0px;
+  padding-top: 72px;
+  margin-bottom: 20px;
 }
-.list-portfolio-middle-two p:nth-child(n) {
-  font-size: 16px;
-  line-height: 1.87;
-  color: var(--colorC);
-  padding-left: 24px;
-  padding-bottom: 20px;
+.joinus-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.list-portfolio-middle-two li:nth-child(n) {
-  border: 1px solid #eeeeee;
+.flix {
+  display: flex;
+}
+.kontakt {
+  margin-right: 70px;
+}
+.social-links-footer {
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--colorE);
 }
